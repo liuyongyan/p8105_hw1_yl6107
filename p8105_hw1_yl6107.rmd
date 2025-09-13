@@ -17,7 +17,7 @@ library(moderndive)
 data("early_january_weather")
 ```
 
-The `early_january_weather` dataset is the hourly meteorological data for LGA, JFK and EWR for the month of January 2013. This is a subset of the weather data frame from nycflights13.
+The `early_january_weather` dataset is the hourly meteorological data for LGA, JFK and EWR for the first half month of January 2013. This is a subset of the weather data frame from nycflights13.
 
 The variables in this data set includes:
 
@@ -58,7 +58,7 @@ From the visualization, we can make the following observations:
 
 -   Temperature goes up in the afternoon and down at night, showing a pattern of daily cycles.
 -   Higher humidity (darker color) often happens when the temperature is low. When humidity is higher, the difference between day and night temperature is smaller.
--   Around January 15 the day and night temperature are almost the same, maybe because of rain or potential data error.
+-   In January 15, the day and night temperatures are almost the same, but the humidity is not so high, maybe because of a data error.
 
 ```{r save_plot}
 ggsave("temp_trend.png", plot = temp_plot, width = 7, height = 5, dpi = 300)
